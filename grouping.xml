@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG">
+    <test name="grouping">
+        <groups>
+                <run>
+                    <include name="Eliza">
+
+                    </include>
+                </run>
+        </groups>
+        <classes>
+            <class name="Test.ContactTest"></class>
+            <class name="Test.xpedia_test"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="parameter" parallel="tests" thread-count="3">
+    <test name="browser">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="OS" value="Microsoft Windows 10"></parameter>
+        <classes>
+
+            <class name="TestNG_Intro.TestNG_parameter"></class>
+        </classes>
+    </test>
+
+    <test name="Test Depends Method">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="TestNG_Intro.dependsOnAnnotation">
+
+
+            </class>
+        </classes>
+    </test>
+</suite>
